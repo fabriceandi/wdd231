@@ -1,0 +1,58 @@
+@media only screen and (min-width: 60rem) {
+
+    header span {
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 20px;
+    }
+
+    .main .card {
+        box-shadow: 1px 1px 10px #000;
+    }
+}
+
+@media (min-width: 640px) {
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    #myButton {
+        display: none;
+        /* hide hamburger button */
+    }
+}
+
+@media (min-width: 300px) {
+    #myButton {
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+    }
+
+    #myButton::before {
+        content: "☰";
+    }
+
+    #myButton.open::before {
+        content: "X";
+    }
+
+    ul.navigation.open {
+        display: block;
+    }
+}

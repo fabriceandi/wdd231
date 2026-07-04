@@ -4,11 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 </title>
+    <meta name="description"
+        content="Tojofenitra Fabrice's homepage for WDD 231 - Web Frontend Development in the course assignment portal">
+    <meta name="author" content="Tojofenitra Fabrice">
+    <title>WDD231 - Course Home Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
-    <h1> WDD 231 </h1>
+    <header>
+        <img src="images/logo.svg" alt="logo" width="20" height="20">
+        <span>Tojofenitra Fabrice</span>
+        <button id="myButton" aria-label="hamburger-icon"></button>
+    </header>
+    <nav>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Final</a></li>
+            </ul>
+        </nav>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="main">
+            <section class="card">
+                <h2>About Me</h2>
+                <p>My name is Tojofenitra. I'm from Madagascar. I'm currently live in Antananarivo. I'm a student
+                    of BYU-Idaho Online. My hobbies are listening to music and travelling. I love spending fun
+                    time with my family.
+                </p>
+            </section>
+            <section class="card">
+                <h2>Student Photo</h2>
+                <img src="images/profile.webp" alt="Tojo Photo" width="75" height="93">
+            </section>
+        </div>
+        <section>
+            <h2>Web Certificate Courses</h2>
+            <div class="button">
+                <button id="all" aria-label="display-all">All Courses</button>
+                <button id="wdd" aria-label="display-wdd">WDD Courses</button>
+                <button id="cse" aria-label="display-cse">CSE Courses</button>
+            </div>
+            <div class="container"></div>
+            <div class="total"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="socialmedia">
+            <a href="https://github.com/fabriceandi" target="_blank"><img src="images/github.svg" alt="Github"
+                    width="30" height="30"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="Linkedin" width="30"
+                    height="30"></a>
+            <a href="https://www.whatsapp.com" target="_blank"><img src="images/whatsapp.svg" alt="Whatsapp" width="30"
+                    height="30"></a>
+        </div>
+        <div class="date">
+            <p>&copy;<span id="year"></span> - Tojofenitra Fabrice - Madagascar</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
 </body>
 
 </html>

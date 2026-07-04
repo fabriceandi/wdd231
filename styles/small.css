@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lora", serif;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+header {
+    background-color: #072e52;
+    padding: 1.5rem;
+    color: #9b9b9b;
+}
+
+footer {
+    text-align: center;
+    background-color: #fff;
+}
+
+header img {
+    box-shadow: 0 0 10px #000;
+    border-radius: 50px;
+}
+
+nav {
+    background-color: #221d1d;
+}
+
+nav ul {
+    display: none;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: .5rem;
+    display: block;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background-color: rgba(250, 250, 250, 0.1);
+}
+
+nav .active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #8f4714;
+}
+
+main {
+    margin: 1rem 2vw;
+}
+
+main .card {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    height: 175px;
+}
+
+.card img {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+}
+
+main h2 {
+    background-color: #072e52;
+    padding: .65rem 0;
+    text-align: center;
+    display: block;
+    color: #cb5a0a;
+}
+
+main ul {
+    padding: 10px;
+}
+
+main ul li a {
+    color: #303006;
+}
+
+main p {
+    padding: 10px;
+}
+
+.socialmedia {
+    padding: 1rem;
+}
+
+.socialmedia a {
+    padding-right: 10px;
+}
+
+.date {
+    background-color: #072e52;
+    padding: 1rem;
+    color: #9b9b9b;
+}
+
+#lastModified {
+    padding-top: 5px;
+    color: #cb5a0a;
+}
+
+button {
+    font-size: 20px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    background-color: #072e52;
+    color: #9b9b9b;
+}
+
+.container,
+.button {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    place-items: center;
+    margin-top: 1rem;
+}
